@@ -58,7 +58,6 @@ const ProductItem = ({
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   const { id, amount } = ownProps;
-
   return {
     remove: () => dispatch(removeItem(id)),
     increase: () => dispatch({ type: INCREASE, payload: { id } }),
